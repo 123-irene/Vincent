@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coin-flip-game</title>
+    <link rel="stylesheet" href="styles/coin-flip.css">
+</head>
+<body>
+    <p class="game">COIN-FLIP-GAME</p>
+   <button class="head"   onclick="
+  playGame();
+playerMove('head');" >Head</button>
+    <button class="tail"   onclick=" 
+playGame();
+playerMove('tail');  " >Tail</button>
+<p class="moves"></p>
+<p class="js-result"></p>
+<p class="js-score"></p>
+<button  class="reset"   onclick="
+score.wins = 0;
+score.loss = 0;
+updateScore();
+">Reset Score</button>
+
+
+  <script src="scripts/coin-flip.js"> </script>
+</body>
+</html>
